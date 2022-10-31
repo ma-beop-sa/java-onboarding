@@ -23,4 +23,18 @@ public class Problem3 {
 		return digitsArray;
 	}
     
+    private int getClaps(int number) {
+    	ArrayList<Integer> digitsArray = new ArrayList<Integer>();
+    	digitsArray = calcDigit(i);
+    	int clapNumber = 0;
+		
+		for(Integer digit : digitsArray) {
+			if ( (0 == (digit % 3)) && ( 0 != digit )) {
+				clapNumber++;
+			}
+			
+		}
+		retrurn clapNumber;
+    }
+		
 }
